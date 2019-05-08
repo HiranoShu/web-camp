@@ -1,0 +1,48 @@
+ /* ブラウザ規定のCSSをリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*回り込み防止用clearfix*/
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*メイン＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+.main{
+	width: 990px;
+	padding: 50px 0;
+}
+.content-base{
+	width: 300px;
+	margin: 15px;
+	border: solid 2px #f7f7f7;
+	float: left;
+	position: relative;
+}
+.step{
+	color:white;
+	background-color: orange;
+	position: absolute;
+}
+.content{
+	margin: 10px;
+}
+.image{
+	width: 100%;
+}
+
+/*レスポンシブ対応＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
+@media screen and (max-width:768px){
+	.main{
+		width: 100%;
+	}
+	.content-base{
+		width: 90%;
+		margin: 10px auto;
+		float:none;
+	}
+}
